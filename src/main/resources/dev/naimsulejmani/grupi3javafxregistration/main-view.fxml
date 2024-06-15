@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="dev.naimsulejmani.grupi3javafxregistration.MainController"
+            prefHeight="400.0" prefWidth="600.0" alignment="TOP_CENTER">
+
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="60"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="35"/>
+        <RowConstraints minHeight="40"/>
+        <RowConstraints minHeight="50"/>
+    </rowConstraints>
+
+
+    <Label text="Register form" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <Label text="Name" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="tfName" GridPane.rowIndex="1" GridPane.columnIndex="1" promptText="Enter Name here"/>
+
+    <Label text="Surname" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="tfSurname" GridPane.rowIndex="2" GridPane.columnIndex="1" promptText="Enter Surname here"/>
+
+    <Label text="Birthdate" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <DatePicker fx:id="dpBirthdate" GridPane.rowIndex="3" GridPane.columnIndex="1" promptText="Enter Birthdate here"/>
+
+    <Label text="Is Passive" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <CheckBox fx:id="chbIsPassive" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Button fx:id="btnSave" text="Save" GridPane.rowIndex="5" GridPane.columnIndex="0" onAction="#registerForm"/>
+    <Button fx:id="btnReset" text="Reset" GridPane.rowIndex="5" GridPane.columnIndex="1" onAction="#resetForm"/>
+
+    <Label text="List of persons below!" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+    <ListView fx:id="lvPersons" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+    <Label text="Table of persons below!" GridPane.rowIndex="8" GridPane.columnSpan="2"/>
+    <TableView fx:id="tvPersons" GridPane.rowIndex="9" GridPane.columnSpan="2"/>
+</GridPane>
