@@ -45,5 +45,8 @@
     <Label text="List of persons below!" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
     <ListView fx:id="lvPersons" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
     <Label text="Table of persons below!" GridPane.rowIndex="8" GridPane.columnSpan="2"/>
-    <TableView fx:id="tvPersons" GridPane.rowIndex="9" GridPane.columnSpan="2"/>
+    <TableView fx:id="tvPersons" GridPane.rowIndex="9" GridPane.columnSpan="2">
+
+    </TableView>
+    <Label GridPane.rowIndex="10"/>
 </GridPane>
